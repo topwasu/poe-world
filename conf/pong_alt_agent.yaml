@@ -1,0 +1,27 @@
+defaults:
+  - config
+  - _self_
+
+task: PongAlt
+obs_suffix: _basic2
+world_model_learner:
+  obj_type: all
+det_world_model: True
+post_synthesis_mode: agent
+debug_mode: True
+
+checkpoint_folder: saved_checkpoints_Pong_basic2
+
+agent:
+  n_goals_to_achieve: 100
+  quick_build_graph: True
+  fast_world_update: False
+  initial_budget_iterations: 0
+  budget_increase_mode: constant
+  permanent_world_update: False
+  short_term_accuracy: 1
+mcts:
+  exploration_weight: 10.0
+  sticky_actions: True
+  future_length: 1
+  n_tries: 60

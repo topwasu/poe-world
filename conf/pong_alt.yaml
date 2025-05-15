@@ -1,0 +1,20 @@
+defaults:
+  - config
+  - _self_
+
+task: PongAlt
+obs_suffix: _basic2
+world_model_learner:
+  obj_type: all
+det_world_model: True
+post_synthesis_mode: run
+debug_mode: True
+
+imagined_atari_env:
+  start_at: 0
+#   time_lag: 0.1
+
+
+
+checkpoint_folder: saved_checkpoints_Pong_basic2
+

@@ -1,0 +1,19 @@
+defaults:
+  - config
+  - _self_
+
+task: MontezumaRevengeAlt
+obs_suffix: _basic17
+world_model_learner:
+  obj_type: all
+post_synthesis_mode: agent
+debug_mode: True
+
+checkpoint_folder: saved_checkpoints_MontezumaRevenge_basic17
+
+agent:
+  initial_budget_iterations: 0
+  short_term_accuracy: 0.4
+  max_iter: 80
+
+break_g2: True

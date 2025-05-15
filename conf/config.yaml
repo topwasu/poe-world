@@ -1,0 +1,93 @@
+defaults:
+  - _self_
+
+method: poe
+post_synthesis_mode: 'run'
+task: MontezumaRevenge
+seed: 0
+random_seed: 0
+
+multi_core: False
+n_cpu: 8
+
+obs_suffix: '_basic'
+obs_index: -1
+obs_index_length: 1
+
+provider: openrouter
+database_path: null
+use_memory: False
+
+checkpoint_folder: null
+det_world_model: True
+
+imagined_atari_env:
+  start_at: 0
+  time_lag: 0
+
+world_model_learner:
+  obj_type: player
+  exclude_score_objects: True
+
+obj_model_learner:
+  save_freq: 20
+
+synthesizer:
+  synth_window: 1
+
+moe:
+  continue_params: True
+  lr: 1
+  batch_size: 10000
+  n_steps: 4
+  optim: lbfgs
+  cache_history_size: 5
+
+agent:
+  ignore_monster: False
+  initial_budget_iterations: 4000
+  budget_increase_mode: slow
+  prune_bad_edges: True
+  permanent_world_update: True
+  update_player_only: True
+  get_rid_of_ghost: False
+  use_ideal_plan: False
+  n_goals_to_achieve: 1
+  quick_build_graph: False
+  fast_world_update: True
+  short_term_accuracy: 0.4
+  wait_between_goal: 20
+  max_iter: 10
+
+mcts:
+  exploration_weight: 0.01
+  sticky_actions: True
+  future_length: 8
+  n_tries: 20
+  
+
+montezuma_first_room: False
+
+break_g2: False
+
+profiling: False
+
+in_depth_debugging: False
+
+heuristics: advanced
+
+recording: False
+recording_with_bb: False
+
+manual_control: False
+slow_manual_control: False
+
+debug_mode: False
+
+rope_mode: False
+
+eval:
+  set: 'random'
+  mode: 'full'
+
+no_constraints: False

@@ -1,0 +1,15 @@
+defaults:
+  - config
+  - _self_
+
+task: MontezumaRevenge
+obs_suffix: _basic17
+world_model_learner:
+  obj_type: all
+post_synthesis_mode: agent
+debug_mode: True
+
+agent:
+  initial_budget_iterations: 4000
+
+break_g2: True  
