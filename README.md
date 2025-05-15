@@ -1,4 +1,4 @@
-# active-infer-python-world
+# PoE-World
 
 ## Installation
 
