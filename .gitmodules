@@ -1,6 +1,6 @@
 [submodule "openai-hf-interface"]
 	path = openai-hf-interface
-	url = ../openai-hf-interface.git
+	url = https://github.com/topwasu/openai-hf-interface.git
 [submodule "OC_Atari"]
 	path = OC_Atari
 	url = https://github.com/topwasu/OC_Atari.git
