@@ -1,17 +1,24 @@
-# PoE-World
+# [PoE-World: Compositional World Modeling with Products of Programmatic Experts](https://arxiv.org/abs/2505.10819)
+
+By [Wasu Top Piriyakulkij](https://www.cs.cornell.edu/~wp237/), [Yichao Liang](https://yichao-liang.github.io/), [Hao Tang](https://haotang1995.github.io/), [Adrian Weller](https://mlg.eng.cam.ac.uk/adrian/), [Marta Kryven](https://marta-kryven.github.io/), [Kevin Ellis](https://www.cs.cornell.edu/~ellisk/)
+
+[![deploy](https://img.shields.io/badge/Project_Page%20%20-8A2BE2)](https://topwasu.github.io/poe-world) [![arXiv](https://img.shields.io/badge/arXiv-2401.02739-red.svg)](https://arxiv.org/abs/2505.10819)
+
+
+We introduce a novel program synthesis approach to output world models of complex, non-gridworld domains by representing world models as products of programmatic experts.
 
 ## Installation
 
 First clone this project and cd to it 
 ```
-git clone https://github.com/topwasu/active-infer-python-world.git
-cd active-infer-python-world
+git clone https://github.com/topwasu/poe-world.git
+cd poe-world
 ```
 
 Create conda environment 
 ```
-conda create -n autumn python=3.10
-conda activate autumn
+conda create -n poeworld python=3.10
+conda activate poeworld
 ```
 
 Install requirements 
