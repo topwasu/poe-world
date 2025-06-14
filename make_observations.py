@@ -132,13 +132,13 @@ def main(config: DictConfig) -> None:
         make_observations(config, montezuma_actions_basic17,
                           f'obs_{config.task}_basic17')
         
-        from actions_lists.actions_list_extra import montezuma_actions_works_current
-        make_observations(config, montezuma_actions_works_current,
-                          f'obs_{config.task}_works_current')
-    elif config.task == 'MontezumaRevengeAlt':
-        from actions_lists.actions_list_extra import montezuma_alt_actions_works
-        make_observations(config, montezuma_alt_actions_works,
-                          f'obs_{config.task}_works')
+    #     from actions_lists.actions_list_extra import montezuma_actions_works_current
+    #     make_observations(config, montezuma_actions_works_current,
+    #                       f'obs_{config.task}_works_current')
+    # elif config.task == 'MontezumaRevengeAlt':
+    #     from actions_lists.actions_list_extra import montezuma_alt_actions_works
+    #     make_observations(config, montezuma_alt_actions_works,
+    #                       f'obs_{config.task}_works')
     elif config.task == 'Pitfall':
         make_observations(config, pitfall_actions_basics1,
                           f'obs_{config.task}_basic1')
@@ -149,19 +149,19 @@ def main(config: DictConfig) -> None:
     
         make_observations(config, pong_actions_basic2,
                           f'obs_{config.task}_basic2')
-        from actions_lists.actions_list_extra import pong_actions_works
-        make_observations(config, pong_actions_works,
-                          f'obs_{config.task}_works')
-        # from actions_lists.actions_list_extra import pong_actions_worldcoder
-        # make_observations(config, pong_actions_worldcoder,
-        #                   f'obs_{config.task}_worldcoder')
-    elif config.task == 'PongAlt':
-        from actions_lists.actions_list_extra import pong_alt_actions_works
-        make_observations(config, pong_alt_actions_works,
-                          f'obs_{config.task}_works')
-        # from actions_lists.actions_list_extra import pong_alt_actions_worldcoder
-        # make_observations(config, pong_alt_actions_worldcoder,
-        #                   f'obs_{config.task}_worldcoder')
+    #     from actions_lists.actions_list_extra import pong_actions_works
+    #     make_observations(config, pong_actions_works,
+    #                       f'obs_{config.task}_works')
+    #     # from actions_lists.actions_list_extra import pong_actions_worldcoder
+    #     # make_observations(config, pong_actions_worldcoder,
+    #     #                   f'obs_{config.task}_worldcoder')
+    # elif config.task == 'PongAlt':
+    #     from actions_lists.actions_list_extra import pong_alt_actions_works
+    #     make_observations(config, pong_alt_actions_works,
+    #                       f'obs_{config.task}_works')
+    #     # from actions_lists.actions_list_extra import pong_alt_actions_worldcoder
+    #     # make_observations(config, pong_alt_actions_worldcoder,
+    #     #                   f'obs_{config.task}_worldcoder')
     else:
         raise NotImplementedError
 
