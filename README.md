@@ -1,4 +1,4 @@
-# [PoE-World: Compositional World Modeling with Products of Programmatic Experts](https://arxiv.org/abs/2505.10819)
+# [PoE-World: Compositional World Modeling with Products of Programmatic Experts (NeurIPS 2025 Spotlight)](https://arxiv.org/abs/2505.10819)
 
 By [Wasu Top Piriyakulkij](https://www.cs.cornell.edu/~wp237/), [Yichao Liang](https://yichao-liang.github.io/), [Hao Tang](https://haotang1995.github.io/), [Adrian Weller](https://mlg.eng.cam.ac.uk/adrian/), [Marta Kryven](https://marta-kryven.github.io/), [Kevin Ellis](https://www.cs.cornell.edu/~ellisk/)
 
